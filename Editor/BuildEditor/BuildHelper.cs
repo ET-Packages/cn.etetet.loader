@@ -86,7 +86,7 @@ namespace ET
 
             Debug.Log("start build exe");
 
-            string[] levels = { "Assets/Scenes/Init.unity" };
+            string[] levels = { "Packages/cn.etetet.loader/Scenes/Init.unity" };
             BuildReport report = BuildPipeline.BuildPlayer(levels, $"{relativeDirPrefix}/{exeName}", buildTarget, buildOptions);
             if (report.summary.result != BuildResult.Succeeded)
             {

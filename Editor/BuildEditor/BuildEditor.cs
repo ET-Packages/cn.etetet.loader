@@ -112,18 +112,6 @@ namespace ET
                 return;
             }
 
-            if (GUILayout.Button("ExcelExporter"))
-            {
-                ToolsEditor.ExcelExporter();
-                return;
-            }
-
-            if (GUILayout.Button("Proto2CS"))
-            {
-                ToolsEditor.Proto2CS();
-                return;
-            }
-
             GUILayout.Space(5);
         }
     }

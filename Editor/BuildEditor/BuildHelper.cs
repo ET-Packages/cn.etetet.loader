@@ -12,18 +12,6 @@ namespace ET
 
         public static string BuildFolder = "../Release/{0}/StreamingAssets/";
 
-        [InitializeOnLoadMethod]
-        public static void ReGenerateProjectFiles()
-        {
-            Unity.CodeEditor.CodeEditor.CurrentEditor.SyncAll();
-            
-            foreach (string s in FileHelper.GetAllFiles(".", "Ignore.ET*.csproj"))
-            {
-                File.Delete(s);
-            }
-            Debug.Log("regenerate csproj");
-        }
-
 #if ENABLE_VIEW
         [MenuItem("ET/ChangeDefine/Remove ENABLE_VIEW", false, ETMenuItemPriority.ChangeDefine)]
         public static void RemoveEnableView()

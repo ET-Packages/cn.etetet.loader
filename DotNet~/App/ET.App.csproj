@@ -32,6 +32,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\cn.etetet.lockstep\DotNet~\Model\ET.Model.csproj" />
     <ProjectReference Include="..\..\..\cn.etetet.statesync\DotNet~\Model\ET.Model.csproj" />
     <ProjectReference Include="..\Loader\ET.Loader.csproj" />
   </ItemGroup>

@@ -3,6 +3,15 @@ using System.Text.RegularExpressions;
 
 namespace ET
 {
+    [Invoke]
+    public class LogInvoker_Unity: AInvokeHandler<LogInvoker, ILog>
+    {
+        public override ILog Handle(LogInvoker args)
+        {
+            return new UnityLogger();
+        }
+    }
+    
     public class UnityLogger: ILog
     {
         public void Trace(string msg)

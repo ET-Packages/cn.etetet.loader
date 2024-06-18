@@ -29,4 +29,14 @@
     <ItemGroup>
       <PackageReference Include="CommandLineParser" Version="2.9.1" />
     </ItemGroup>
+    <ItemGroup>
+      <Compile Update="NLogger.cs">
+        <Link>World\Log\NLogger.cs</Link>
+      </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <None Update="NLog.config">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
 </Project>

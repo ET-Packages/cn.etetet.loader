@@ -1,0 +1,9 @@
+{
+"Id": 2,
+"Name": "Loader",
+"GitDependencies": {
+  "com.code-philosophy.hybridclr": "https://gitee.com/focus-creative-games/hybridclr_unity.git",
+  "cn.etetet.core": "https://github.com/ET-Packages/cn.etetet.core.git#0.0.1",
+  "cn.etetet.yooassets": "https://github.com/ET-Packages/cn.etetet.yooassets.git#0.0.1"
+  }
+}

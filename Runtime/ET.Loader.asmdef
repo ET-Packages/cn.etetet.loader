@@ -8,7 +8,8 @@
         "YooAsset",
         "YooAsset.Editor",
         "ET.YooAssets",
-        "ET.Init"
+        "ET.Init",
+        "ET.SourceGeneratorAttribute"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

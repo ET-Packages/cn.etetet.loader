@@ -1,5 +1,0 @@
-{
-    "references": [
-        "ET.Init"
-    ]
-}

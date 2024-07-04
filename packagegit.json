@@ -3,5 +3,34 @@
 "Name": "Loader",
 "GitDependencies": {
   "com.code-philosophy.hybridclr": "https://gitee.com/focus-creative-games/hybridclr_unity.git"
-  }
+  },
+"ScriptsReferences": {
+  "ModelView": [
+    "ET.Init"
+  ],
+  "Model": [
+    "ET.Core",
+    "Unity.Mathematics",
+    "MemoryPack",
+    "ET.SourceGeneratorAttribute"
+  ],
+  "HotfixView": [
+    "ET.Core",
+    "Unity.Mathematics",
+    "ET.Loader",
+    "MemoryPack",
+    "ET.Model",
+    "ET.Hotfix",
+    "ET.ModelView",
+    "YooAsset",
+    "ET.SourceGeneratorAttribute"
+  ],
+  "Hotfix": [
+    "ET.Core",
+    "Unity.Mathematics",
+    "MemoryPack",
+    "ET.Model",
+    "ET.SourceGeneratorAttribute"
+  ]
+}
 }

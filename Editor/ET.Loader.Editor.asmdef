@@ -9,7 +9,7 @@
         "ET.YooAssets",
         "ET.Core.Editor",
         "ET.Loader",
-        "ET.Init"
+        "ET.Init.Editor"
     ],
     "includePlatforms": [
         "Editor"

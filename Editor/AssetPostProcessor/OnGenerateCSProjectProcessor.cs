@@ -49,12 +49,12 @@ namespace ET
         /// <summary>
         /// 对生成的解决方案文件(.sln)进行处理, 此处主要为了隐藏一些没有作用的C#项目
         /// </summary>
-        public static string OnGeneratedSlnSolution(string _, string content)
-        {
-            content = Regex.Replace(content, $"Project.*Ignore\\.ET.*\r\nEndProject", string.Empty);
-            content = Regex.Replace(content, $"Project.*Ignore\\.ET.*\nEndProject", string.Empty);
-            return content;
-        }
+        //public static string OnGeneratedSlnSolution(string _, string content)
+        //{
+        //    content = Regex.Replace(content, $"Project.*Ignore\\.ET.*\r\nEndProject", string.Empty);
+        //    content = Regex.Replace(content, $"Project.*Ignore\\.ET.*\nEndProject", string.Empty);
+        //    return content;
+        //}
 
         /// <summary>
         /// 自定义C#项目配置

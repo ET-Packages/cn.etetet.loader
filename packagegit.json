@@ -6,7 +6,7 @@
   },
 "ScriptsReferences": {
   "ModelView": [
-    "ET.Init"
+    "ET.Loader"
   ],
   "Model": [
     "ET.Core",

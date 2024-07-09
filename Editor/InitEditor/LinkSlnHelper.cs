@@ -8,7 +8,7 @@ namespace ET
 {
     public static class LinkSlnHelper
     {
-        //[MenuItem("ET/Init/LinkSln")]
+        //[MenuItem("ET/Loader/LinkSln")]
         public static void Run()
         {
             string etslnPath = Path.Combine(Directory.GetCurrentDirectory(), "ET.sln");

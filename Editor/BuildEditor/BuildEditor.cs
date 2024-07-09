@@ -36,7 +36,7 @@ namespace ET
         private GlobalConfig globalConfig;
         private YooConfig yooConfig;
 
-        [MenuItem("ET/Build Tool", false, ETMenuItemPriority.BuildTool)]
+        [MenuItem("ET/Loader/Build Tool", false, ETMenuItemPriority.BuildTool)]
         public static void ShowWindow()
         {
             GetWindow<BuildEditor>();

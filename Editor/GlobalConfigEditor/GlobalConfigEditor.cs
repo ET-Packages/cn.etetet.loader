@@ -28,7 +28,7 @@ namespace ET
                 CodeModeChangeHelper.ChangeToCodeMode(codeMode.ToString());
                 
                 AssetDatabase.Refresh();
-                InitHelper.ReGenerateProjectFiles();
+                ReGenerateProjectFilesHelper.Run();
             }
             
             string sceneName = EditorGUILayout.TextField($"SceneName", globalConfig.SceneName);

@@ -25,7 +25,7 @@ namespace ET
                 throw new Exception("not found demo et.sln");
             }
             
-            GlobalConfig globalConfig = AssetDatabase.LoadAssetAtPath<GlobalConfig>("Packages/com.etetet.loader/Resources/GlobalConfig.asset");
+            GlobalConfig globalConfig = AssetDatabase.LoadAssetAtPath<GlobalConfig>("Packages/cn.etetet.loader/Resources/GlobalConfig.asset");
             globalConfig.SceneName = packageGit.Name;
             AssetDatabase.SaveAssets();
         }

@@ -1,6 +1,5 @@
 ﻿using System;
 using CommandLine;
-using UnityEditor;
 using UnityEngine;
 
 namespace ET
@@ -57,6 +56,4 @@ namespace ET
             World.Instance.Dispose();
         }
     }
-	
-	
 }

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor;
+using UnityEngine;
 
 namespace ET
 {
@@ -119,7 +121,7 @@ namespace ET
         }
 
         [MenuItem("ET/Loader/ReGenerateProjectAssemblyReference")]
-        private static void ReGenerateProjectAssemblyReference()
+        public static void ReGenerateProjectAssemblyReference()
         {
             var GlobalConfig = Resources.Load<GlobalConfig>("GlobalConfig");
             ChangeToCodeMode(GlobalConfig.CodeMode.ToString());

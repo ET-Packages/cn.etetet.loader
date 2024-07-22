@@ -117,5 +117,13 @@ namespace ET
         {
             File.WriteAllText(path, $"{{ \"reference\": \"ET.{modelDir}\" }}");
         }
+
+        [MenuItem("ET/Loader/ReGenerateProjectAssemblyReference")]
+        private static void ReGenerateProjectAssemblyReference()
+        {
+            var GlobalConfig = Resources.Load<GlobalConfig>("GlobalConfig");
+            ChangeToCodeMode(GlobalConfig.CodeMode.ToString());
+            AssetDatabase.Refresh();
+        }
     }
 }

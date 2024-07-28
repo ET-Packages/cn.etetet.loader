@@ -1,7 +1,7 @@
 {
   "name": "cn.etetet.loader",
   "displayName": "ET.Loader",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "unity": "2022.3",
   "description": "et loader",
   "author": {
@@ -14,8 +14,8 @@
   },
   "relatedPackages": {},
   "dependencies": {
-    "cn.etetet.core": "0.0.13",
-    "cn.etetet.yooassets": "0.0.1"
+    "cn.etetet.core": "0.0.16",
+    "cn.etetet.yooassets": "0.0.2"
   },
   "publishConfig": 
   { 

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor;
+using UnityEngine;
 
 namespace ET
 {
@@ -116,6 +118,14 @@ namespace ET
         private static void CreateAssemblyReference(string path, string modelDir)
         {
             File.WriteAllText(path, $"{{ \"reference\": \"ET.{modelDir}\" }}");
+        }
+
+        [MenuItem("ET/Loader/ReGenerateProjectAssemblyReference")]
+        public static void ReGenerateProjectAssemblyReference()
+        {
+            var GlobalConfig = Resources.Load<GlobalConfig>("GlobalConfig");
+            ChangeToCodeMode(GlobalConfig.CodeMode.ToString());
+            AssetDatabase.Refresh();
         }
     }
 }

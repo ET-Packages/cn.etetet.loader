@@ -19,7 +19,7 @@
     "ET.Model",
     "ET.Hotfix",
     "ET.ModelView",
-    "YooAsset",
+    "ET.YooAsset",
     "ET.SourceGeneratorAttribute"
   ],
   "Hotfix": [

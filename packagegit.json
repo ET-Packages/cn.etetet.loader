@@ -9,6 +9,7 @@
     "ET.Core",
     "Unity.Mathematics",
     "ET.MemoryPack",
+    "ET.YooAssets",
     "ET.SourceGeneratorAttribute"
   ],
   "HotfixView": [
@@ -19,7 +20,7 @@
     "ET.Model",
     "ET.Hotfix",
     "ET.ModelView",
-    "ET.YooAsset",
+    "ET.YooAssets",
     "ET.SourceGeneratorAttribute"
   ],
   "Hotfix": [

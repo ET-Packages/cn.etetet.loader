@@ -3,13 +3,9 @@
     "rootNamespace": "ET",
     "references": [
         "ET.Core",
-        "HybridCLR.Runtime",
-        "MemoryPack",
-        "YooAsset",
-        "YooAsset.Editor",
         "ET.YooAssets",
-        "ET.Init",
-        "ET.SourceGeneratorAttribute"
+        "ET.SourceGeneratorAttribute",
+        "ET.HybridCLR"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

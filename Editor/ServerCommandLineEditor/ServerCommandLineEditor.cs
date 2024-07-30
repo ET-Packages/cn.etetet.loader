@@ -38,22 +38,16 @@ namespace ET
             this.startConfig = this.startConfigs[this.selectStartConfigIndex];
             this.developMode = (DevelopMode)EditorGUILayout.EnumPopup("起服模式：", this.developMode);
 
-            string dotnet = "dotnet.exe";
-
-#if UNITY_EDITOR_OSX
-            dotnet = "dotnet";
-#endif
-
             if (GUILayout.Button("Start Server(Single Process)"))
             {
-                string arguments = $"ET.App.dll --SceneName={globalConfig.SceneName} --Process=1 --StartConfig=StartConfig/{this.startConfig} --Console=1";
-                ProcessHelper.Run(dotnet, arguments, "../Bin/");
+                string arguments = $"Bin/ET.App.dll --SceneName={globalConfig.SceneName} --Process=1 --StartConfig=StartConfig/{this.startConfig} --Console=1";
+                ProcessHelper.DotNet(arguments, "./");
             }
 
             if (GUILayout.Button("Start Watcher"))
             {
-                string arguments = $"ET.App.dll --SceneName=Watcher --StartConfig=StartConfig/{this.startConfig} --Console=1";
-                ProcessHelper.Run(dotnet, arguments, "../Bin/");
+                string arguments = $"Bin/ET.App.dll --SceneName=Watcher --StartConfig=StartConfig/{this.startConfig} --Console=1";
+                ProcessHelper.DotNet(arguments, "./");
             }
 
             if (GUILayout.Button("Start Mongo"))

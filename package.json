@@ -1,7 +1,7 @@
 {
   "name": "cn.etetet.loader",
   "displayName": "ET.Loader",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "unity": "2022.3",
   "description": "et loader",
   "author": {
@@ -15,10 +15,9 @@
   "relatedPackages": {},
   "dependencies": {
     "cn.etetet.core": "0.0.16",
-    "cn.etetet.yooassets": "2.1.2"
+    "cn.etetet.yooassets": "2.1.3"
   },
-  "publishConfig": 
-  { 
-    "registry": "https://npm.pkg.github.com/@ET-Packages" 
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ET-Packages"
   }
 }

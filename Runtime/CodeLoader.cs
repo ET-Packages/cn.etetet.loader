@@ -23,10 +23,10 @@ namespace ET
         {
             if (!Define.IsEditor)
             {
-                this.dlls = await ResourcesComponent.Instance.LoadAllAssetsAsync<TextAsset>($"Packages/cn.etetet.loader/Code/ET.Model.dll.bytes");
+                this.dlls = await ResourcesComponent.Instance.LoadAllAssetsAsync<TextAsset>($"Packages/cn.etetet.loader/Bundles/Code/ET.Model.dll.bytes");
                 if (Define.EnableIL2CPP)
                 {
-                    this.aotDlls = await ResourcesComponent.Instance.LoadAllAssetsAsync<TextAsset>($"Packages/cn.etetet.loader/AotDlls/mscorlib.dll.bytes");
+                    this.aotDlls = await ResourcesComponent.Instance.LoadAllAssetsAsync<TextAsset>($"Packages/cn.etetet.loader/Bundles/AotDlls/mscorlib.dll.bytes");
                 }
             }
         }

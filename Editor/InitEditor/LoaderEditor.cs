@@ -12,15 +12,15 @@ namespace ET
             return;
 #endif
             
+            // 设置GlobalConfig中的SceneName字段
+            SceneNameSetHelper.Run();
+            
             LinkSlnHelper.Run();
             
             // 刷新4个程序集的asmdef引用
             ScriptsReferencesHelper.Run();
             
             CodeModeChangeHelper.ChangeToCodeMode("ClientServer");
-            
-            // 设置GlobalConfig中的SceneName字段
-            SceneNameSetHelper.Run();
             
             InitScriptHelper.Run();
             

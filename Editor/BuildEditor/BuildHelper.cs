@@ -8,9 +8,9 @@ namespace ET
 {
     public static class BuildHelper
     {
-        private const string relativeDirPrefix = "../Release";
+        private const string relativeDirPrefix = "./Release";
 
-        public static string BuildFolder = "../Release/{0}/StreamingAssets/";
+        public static string BuildFolder = "./Release/{0}/StreamingAssets/";
 
 #if ENABLE_VIEW
         [MenuItem("ET/Loader/Remove ENABLE_VIEW", false, ETMenuItemPriority.ChangeDefine)]

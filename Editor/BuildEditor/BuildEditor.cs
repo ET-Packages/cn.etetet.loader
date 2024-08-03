@@ -44,7 +44,7 @@ namespace ET
 
         private void OnEnable()
         {
-            globalConfig = AssetDatabase.LoadAssetAtPath<GlobalConfig>("Assets/Resources/GlobalConfig.asset");
+            globalConfig = AssetDatabase.LoadAssetAtPath<GlobalConfig>("Packages/cn.etetet.loader/Resources/GlobalConfig.asset");
             yooConfig = AssetDatabase.LoadAssetAtPath<YooConfig>("Packages/cn.etetet.yooassets/YooConfig.asset");
 
 #if UNITY_ANDROID
@@ -84,12 +84,6 @@ namespace ET
                 if (this.globalConfig.CodeMode != CodeMode.Client)
                 {
                     Log.Error("build package CodeMode must be CodeMode.Client, please select Client");
-                    return;
-                }
-
-                if (this.yooConfig.EPlayMode == EPlayMode.EditorSimulateMode)
-                {
-                    Log.Error("build package EPlayMode must not be EPlayMode.EditorSimulateMode, please select HostPlayMode");
                     return;
                 }
 

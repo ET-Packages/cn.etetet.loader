@@ -1,7 +1,7 @@
 ﻿{
   "name": "cn.etetet.loader",
   "displayName": "ET.Loader",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "unity": "2022.3",
   "description": "et框架核心，是一个加载器，用于加载model modelview hotfix hotfixview",
   "author": {
@@ -14,7 +14,7 @@
   },
   "relatedPackages": {},
   "dependencies": {
-    "cn.etetet.core": "0.0.20",
+    "cn.etetet.core": "0.1.1",
     "cn.etetet.yooassets": "2.1.3"
   },
   "publishConfig": {

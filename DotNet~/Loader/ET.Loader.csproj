@@ -34,4 +34,9 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
+    <ItemGroup>
+      <Compile Include="..\..\Runtime\HttpClientHelper.cs">
+        <Link>HttpClientHelper.cs</Link>
+      </Compile>
+    </ItemGroup>
 </Project>

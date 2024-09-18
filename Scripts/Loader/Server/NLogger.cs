@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if DOTNET
+using System;
 using System.IO;
 using NLog;
 
@@ -58,7 +59,6 @@ namespace ET
             this.logger.Error(e.ToString());
         }
 
-#if DOTNET
         public void Trace(ref System.Runtime.CompilerServices.DefaultInterpolatedStringHandler message)
         {
             this.logger.Trace(message.ToStringAndClear());
@@ -83,6 +83,6 @@ namespace ET
         {
             this.logger.Error(message.ToStringAndClear());
         }
-#endif
     }
 }
+#endif

@@ -23,9 +23,17 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <Optimize>true</Optimize>
     </PropertyGroup>
+
     <ItemGroup>
-      <ProjectReference Include="$(SolutionDir)Packages\cn.etetet.core\DotNet~\ET.Core\ET.Core.csproj" />
+        <Compile Include="$(SolutionDir)Packages\cn.etetet.*\Scripts\Loader\Share\**\*.cs">
+            <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
+        </Compile>
+
+        <Compile Include="$(SolutionDir)Packages\cn.etetet.*\Scripts\Loader\Server\**\*.cs">
+            <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
+        </Compile>
     </ItemGroup>
+    
     <ItemGroup>
       <PackageReference Include="CommandLineParser" Version="2.9.1" />
     </ItemGroup>
@@ -35,8 +43,6 @@
       </None>
     </ItemGroup>
     <ItemGroup>
-      <Compile Include="..\..\Runtime\HttpClientHelper.cs">
-        <Link>HttpClientHelper.cs</Link>
-      </Compile>
+      <ProjectReference Include="..\..\cn.etetet.core\DotNet~\ET.Core.csproj" />
     </ItemGroup>
 </Project>

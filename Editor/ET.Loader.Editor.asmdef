@@ -3,7 +3,6 @@
     "rootNamespace": "ET",
     "references": [
         "ET.Core",
-        "YooAsset",
         "ET.YooAssets",
         "ET.Core.Editor",
         "ET.Loader",

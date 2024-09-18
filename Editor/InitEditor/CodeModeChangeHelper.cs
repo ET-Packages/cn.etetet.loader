@@ -12,7 +12,7 @@ namespace ET
 
         private static readonly string[] scriptDirs = { "Scripts", "CodeMode" };
         
-        private static readonly string[] modelDirs = {"Model", "Hotfix", "ModelView", "HotfixView"};
+        private static readonly string[] modelDirs = {"Model", "Hotfix", "ModelView", "HotfixView", "Core", "Loader"};
 
         private static readonly string[] serverDirs = { "Server", "Client", "Share", "ClientServer" };
 
@@ -30,6 +30,12 @@ namespace ET
             "Client/Scripts/HotfixView/Client",
             "Client/Scripts/HotfixView/Share",
             "Client/CodeMode/HotfixView/Client",
+            "Client/Scripts/Core/Client",
+            "Client/Scripts/Core/Share",
+            "Client/CodeMode/Core/Client",
+            "Client/Scripts/Loader/Client",
+            "Client/Scripts/Loader/Share",
+            "Client/CodeMode/Loader/Client",
 
             "Server/Scripts/Model/Server",
             "Server/Scripts/Model/Share",
@@ -37,6 +43,12 @@ namespace ET
             "Server/Scripts/Hotfix/Server",
             "Server/Scripts/Hotfix/Share",
             "Server/CodeMode/Hotfix/Server",
+            "Server/Scripts/Core/Server",
+            "Server/Scripts/Core/Share",
+            "Server/CodeMode/Core/Server",
+            "Server/Scripts/Loader/Server",
+            "Server/Scripts/Loader/Share",
+            "Server/CodeMode/Loader/Server",
 
             "ClientServer/Scripts/Model/Client",
             "ClientServer/Scripts/Model/Server",
@@ -53,7 +65,15 @@ namespace ET
             "ClientServer/Scripts/HotfixView/Client",
             "ClientServer/Scripts/HotfixView/Server",
             "ClientServer/Scripts/HotfixView/Share",
-            "ClientServer/CodeMode/HotfixView/ClientServer"
+            "ClientServer/CodeMode/HotfixView/ClientServer",
+            "ClientServer/Scripts/Core/Client",
+            "ClientServer/Scripts/Core/Share",
+            "ClientServer/Scripts/Core/Server",
+            "ClientServer/CodeMode/Core/ClientServer",
+            "ClientServer/Scripts/Loader/Client",
+            "ClientServer/Scripts/Loader/Share",
+            "ClientServer/Scripts/Loader/Server",
+            "ClientServer/CodeMode/Loader/ClientServer",
         };
         
         public static void ChangeToCodeMode(string codeMode)

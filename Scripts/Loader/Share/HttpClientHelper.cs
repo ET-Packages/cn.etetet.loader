@@ -11,7 +11,7 @@ namespace ET.Client
         {
             try
             {
-#if UNITY
+#if UNITY_WEBGL
                 UnityEngine.Networking.UnityWebRequest req = UnityEngine.Networking.UnityWebRequest.Get(link);
                 await req.SendWebRequest();
                 return req.downloadHandler.text;

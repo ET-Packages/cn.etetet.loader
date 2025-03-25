@@ -9,9 +9,7 @@ namespace ET
         {
 #if INITED
             UnityEngine.Debug.LogError("Your project are already inited, if you want to reinit, please remove INITED define in unity!");
-            return;
-#endif
-            
+#else
             // 设置GlobalConfig中的SceneName字段
             SceneNameSetHelper.Run();
             
@@ -25,6 +23,7 @@ namespace ET
             InitScriptHelper.Run();
             
             DefineHelper.EnableDefineSymbols("INITED", true);
+#endif
         }
     }
 }
